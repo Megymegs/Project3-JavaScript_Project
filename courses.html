@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Code4Ct - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS\Styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:500" rel="stylesheet">
+    <script src="jQuery/jquery-3.2.1.min.js"></script>
+
+  </head>
+
+  <style>
+
+  h2{
+    margin-left: 2%;
+  }
+
+  h4{
+	  float:left;
+	  margin:1%;
+  }
+
+  p{
+	  padding:1%;
+	  }
+
+  .Display{
+	  border-radius:50%;
+	  width: 10px;
+	  height: 20px;
+ 	  margin:1%;
+	  text-align:center;
+  }
+
+  #OAC{
+    text-align: center;
+  }
+
+  #intro{
+    padding-left: 10%;
+    width: 80%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+  }
+
+    #courses{
+	  display:grid;
+	  grid-gap: 2vw;
+	  grid-template-rows: repeat(3,1fr);
+	  grid-template-columns: repeat(3,1fr);
+	margin-left: 1%;
+  }
+
+  #WebPage{
+  	  grid-row:1/4;
+	  grid-column:1/2;
+	  display:grid;
+	  grid-gap: 2vw;
+	  grid-template-rows: repeat(3,1fr);
+	  grid-template-columns: 1fr;
+  }
+
+  #intoWebPages{
+	  grid-row:1/1;
+	  grid-column:1/1;
+	  box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+    padding: 18% 1% 1% 1%;
+  }
+
+  #create{
+	  grid-row:2/2;
+	  grid-column:1/1;
+	  box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+    padding: 18% 1% 1% 1%;
+  }
+
+  #createWeb{
+	  grid-row:3/3;
+	  grid-column:1/1;
+	  box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+    padding: 18% 1% 1% 1%;
+  }
+
+  #Music{
+  	  grid-row:1/4;
+	  grid-column:2/3;
+	  display:grid;
+	  grid-gap: 2vw;
+	  grid-template-rows: repeat(3,1fr);
+	  grid-template-columns: 1fr;
+	margin-left: 1%;
+  }
+
+  #intoMusic{
+	  grid-row:1/1;
+	  grid-column:1/1;
+	  box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+  }
+
+  #createMusic{
+	  grid-row:2/2;
+	  grid-column:1/1;
+	  box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+  }
+
+  #More{
+  	  grid-row:1/4;
+	  grid-column:3/4;
+	  display:grid;
+	  grid-gap: 2vw;
+	  grid-template-rows: repeat(3,1fr);
+	  grid-template-columns: 1fr;
+  	margin-left: 1%;
+  }
+
+  #anime{
+	  grid-row:1/1;
+	  grid-column:1/1;
+	  	  box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+  }
+
+  #dev{
+	  grid-row:2/2;
+	  grid-column:1/1;
+	  	  box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+  }
+
+  #beginner {
+	  display:grid;
+	  grid-gap: 2vw;
+	  grid-template-rows: 1fr;
+	  grid-template-columns: 1fr;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+#BegCourses {
+	  display:grid;
+	  grid-gap: 2vw;
+	  grid-template-rows: 1fr;
+	  grid-template-columns: repeat(3,1fr);
+    padding-left: 10%;
+    width: 80%;
+	}
+
+  #js{
+	  grid-row:1/1;
+	  grid-column:1/1;
+	  	  box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+  }
+
+  #front-end{
+	  grid-row:1/1;
+	  grid-column:2/2;
+	  	  box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+  }
+
+  #python{
+	  grid-row:1/1;
+	  grid-column:3/3;
+	  	  box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+  }
+
+  #intermediate{
+    padding-top: 1%;
+    padding-bottom: 2%;
+  }
+
+  #inter{
+	  display:grid;
+	  grid-gap: 2vw;
+	  grid-template-rows: 1fr;
+	  grid-template-columns: repeat(2,1fr);
+    padding-left: 10%;
+    width: 80%;
+	  }
+
+  #FulSt{
+	  grid-row:1/2;
+	  grid-column:1/1;
+    box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+  }
+
+  #Web-Dep{
+	  grid-row:1/2;
+	  grid-column:2/2;
+    box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+  }
+
+  #social{
+	  clear:both;
+    padding-top: 1%;
+    padding-bottom: 2%;
+	  }
+
+#SocoInov{
+	  display:grid;
+	  grid-gap: 2vw;
+	  grid-template-rows: repeat(2,1fr);
+	  grid-template-columns: repeat(2,1fr);
+    padding-left: 10%;
+    width: 80%;
+}
+
+#Inno{
+	  grid-row:1/2;
+	  grid-column:1/2;
+	  	  box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+	}
+
+#Storm{
+	  grid-row:2/3;
+	  grid-column:1/2;
+    box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+	}
+
+#Hack{
+	  grid-row:1/2;
+	  grid-column:2/3;
+    box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+	}
+
+#Ind{
+	  grid-row:2/3;
+	  grid-column:2/3;
+    box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+	}
+
+  #career{
+  	  background-color: black;
+  	  color:white;
+      clear:both;
+      padding-top: 1%;
+      padding-bottom: 2%;
+	  }
+
+#life{
+	  display:grid;
+	  grid-gap: 2vw;
+	  grid-template-rows: repeat(2,1fr);
+	  grid-template-columns: repeat(3,1fr);
+    padding-left: 10%;
+    width: 80%;
+  }
+
+#Convo{
+	  grid-row:1/2;
+	  grid-column:1/2;
+    box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+	}
+
+#Presentation{
+	  grid-row:2/3;
+	  grid-column:1/2;
+    box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+	}
+
+#CV{
+	  grid-row:1/2;
+	  grid-column:2/3;
+    box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+	}
+
+#Net{
+	  grid-row:2/3;
+	  grid-column:2/3;
+    box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+	}
+
+#Digi{
+	  grid-row:1/2;
+	  grid-column:3/4;
+	  	  box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+
+	  }
+
+#Apply{
+	  grid-row:2/2;
+	  grid-column:3/4;
+    box-shadow:#EFEFEF 2px 2px inset, grey 0px 0px 6px 6px;
+	  padding:1%;
+  }
+
+  </style>
+  <body>
+
+    <section class="thetop">
+
+      <nav>
+        <img src="Images/Logos/Code4CT_logo.jpg" alt="Code 4 CT logo" height="100%" width="20%" style="float:left">
+
+        <div id="NavMenu">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          <input id="Search" type="search" name="Search" placeholder="search..">
+          <button id="Search" style="left:0; background-color:white;"><i class="fa fa-search" style="color:#e38f84;"></i></button>
+        </div>
+
+      </nav>
+
+      <div id="MainBody">
+        <div id="Breadcrumb">
+          <h2>Our Courses</h2>
+          <ul>
+            <li><a href="index.html"><span style="color:#e38f84">HOME</span></a></li>
+            <li><i class="fa fa-long-arrow-right"></i></li>
+            <li><a href="courses.html">COURSES</a></li>
+          </ul>
+        </div>
+        <div id="OAC">
+        	<div id="intro">
+            	<h3 style="text-align:center; width:40%; margin-left:30%;">Our <span id="FirstWord">Intro</span> Courses</h3>
+                <div id="courses">
+                  <div id="WebPage">
+                    <h2 style="grid-row:1/2; grid-column:1/2;">Intro to Coding &nbsp; <button class="Display" id="WebDisplay1" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="intoWebPages" class="course">
+                    </div>
+                    <h2 style="grid-row:2/3; grid-column:1/2;">Create With Code &nbsp; <button class="Display" id="WebDisplay2" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="create" class="course">
+                    </div>
+                    <h2 style="grid-row:3/4; grid-column:1/2;">Create With Code &nbsp; <button class="Display" id="WebDisplay3" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="createWeb" class="course">
+                    </div>
+                  </div>
+                  <div id="Music">
+                    <h2 style="grid-row:1/2; grid-column:1/2;">Intro to Music &nbsp; <button class="Display" id="MusicDisplay1" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="intoMusic" class="course">
+                    </div>
+                    <h2 style="grid-row:2/3; grid-column:1/2;">Create Music With Code &nbsp; <button class="Display" id="MusicDisplay2" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="createMusic" class="course">
+                    </div>
+                  </div>
+                  <div id="More">
+                    <h2 style="grid-row:1/2; grid-column:1/2;">Intro to Animation &nbsp; <button class="Display" id="MoreDisplay1" style="float:right; margin-right:10%;"></button></h4>
+                    <div id="anime" class="course">
+                    </div>
+                    <h2 style="grid-row:2/3; grid-column:1/2;">Getting Started &nbsp; <button class="Display" id="MoreDisplay2" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="dev" class="course">
+                    </div>
+                   </div>
+                  </div>
+            </div>
+           	<div id="beginner">
+            	<h3 style="text-align:center; width:40%; margin-left:30%;">Our <span id="FirstWord">Beginner</span> Courses</h3>
+                <div id="BegCourses">
+                    <h2 style="grid-row:1/2; grid-column:1/2;">Javascript &nbsp; <button class="Display" id="beginnerDisplay1" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="js" class="course">
+                    </div>
+                    <h2 style="grid-row:1/2; grid-column:2/3;">Front End &nbsp; <button class="Display" id="beginnerDisplay2" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="front-end" class="course">
+                    </div>
+                    <h2 style="grid-row:1/2; grid-column:3/4;">Python &nbsp; <button class="Display" id="beginnerDisplay3" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="python" class="course">
+                    </div>
+                </div>
+
+            </div>
+           	<div id="intermediate">
+            <h3 style="text-align:center; width:40%; margin-left:30%;">Our <span id="FirstWord">Intermediate</span> Courses</h3>
+            <div id="inter">
+                    <h2 style="grid-row:1/2; grid-column:1/2;">JavaScript &nbsp; <button class="Display" id="intermediateDisplay1" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="FulSt" class="course">
+                    </div>
+                    <h2 style="grid-row:1/2; grid-column:2/3;">Website Hosting &nbsp; <button class="Display" id="intermediateDisplay2" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="Web-Dep" class="course">
+                    </div>
+                </div>
+             </div>
+           	<div id="social">
+            	<h3 style="text-align:center; width:40%; margin-left:30%;">Socia<span id="FirstWord">l Inno</span>vation</h3
+                ><div id="SocoInov">
+                    <h2 style="grid-row:1/2; grid-column:1/2;">Social Innovation &nbsp; <button class="Display" id="socialDisplay1" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="Inno" class="course">
+                    </div>
+                    <h2 style="grid-row:2/3; grid-column:1/2;">Social Storm &nbsp; <button class="Display" id="socialDisplay2" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="Storm" class="course">
+                    </div>
+                    <h2 style="grid-row:1/2; grid-column:2/3;">Social Hack &nbsp; <button class="Display" id="socialDisplay3" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="Hack" class="course">
+                    </div>
+                    <h2 style="grid-row:2/3; grid-column:2/3;">Immersion &nbsp; <button class="Display" id="socialDisplay4" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="Ind" class="course">
+                    </div>
+                </div>
+             </div>
+           	<div id="career">
+            	<h3 style="text-align:center; width:40%; margin-left:30%;">Career<span id="FirstWord"> and </span>Lifeskills</h3>
+              <div id="life">
+                    <h2 style="grid-row:1/2; grid-column:1/2;">Conversation &nbsp; <button class="Display" id="careerDisplay1" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="Convo" class="course">
+                    </div>
+                    <h2 style="grid-row:2/3; grid-column:1/2;">Presentation &nbsp; <button class="Display" id="careerDisplay2" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="Presentation" class="course">
+                    </div>
+                    <h2 style="grid-row:1/2; grid-column:2/3;">CV &nbsp; <button class="Display" id="socialDisplay3" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="CV" class="course">
+                    </div>
+                    <h2 style="grid-row:2/3; grid-column:2/3;">Network &nbsp; <button class="Display" id="careerDisplay4" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="Net" class="course">
+                    </div>
+                    <h2 style="grid-row:1/2; grid-column:3/4;">Digital &nbsp; <button class="Display" id="careerDisplay5" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="Digi" class="course">
+                    </div>
+                    <h2 style="grid-row:2/3; grid-column:3/4;">Tertiary &nbsp; <button class="Display" id="careerDisplay6" style="float:right; margin-right:10%;"></button></h2>
+                    <div id="Apply" class="course">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Subscribe">
+          <h3 style="width:100%; border-bottom:none; margin-bottom:0;"><i class="fa fa-paper-plane" style="color:#e38f84; padding:1%;"></i>Subcribe To Us</h3>
+          <p>Subcribe to our news leteer to stay up to date with our latest developments.</p>
+          <input type="email" placeholder="Enter your email" style="float:left; margin-left:36%; height:30px; width:20%; background-color:#e1d4d4; border-radius:8%;">
+          <button id="Search" style="left:0; background-color:#e38f84; color:white; float:left; margin-top:0;height:36px; width:8%; border-radius:10%;">Submit</button>
+        </div>
+      </div>
+
+      <footer>
+        <div id="PartnerSlider">
+          <ul id="slides">
+            <li class="slide showing"><img src="Images/Logos/45_case_study_logos_11_csg.jpg" alt="" height="100%" width="100%"></li>
+            <li class="slide"><img src="Images/Logos/deloitte-logo.png" alt="" height="100%" width="100%"></li>
+            <li class="slide"><img src="Images/Logos/lwandlelogo.png" alt="" height="100%" width="100%"></li>
+            <li class="slide"><img src="Images/Logos/mazars-logo.png" alt="" height="100%" width="100%"></li>
+            <li class="slide"><img src="Images/Logos/Mobenzi_logo.png" alt="" height="100%" width="100%"></li>
+            <li class="slide"><img src="Images/Logos/openboxlogo.png" alt="" height="100%" width="100%"></li>
+            <li class="slide"><img src="Images/Logos/Takealot-logo.png" alt="" height="100%" width="100%"></li>
+            <li class="slide"><img src="Images/Logos/TNS-logo.png" alt="" height="100%" width="100%"></li>
+          </ul>
+          <div id="Blocker1"></div>
+          <div id="Blocker2"></div>
+        </div>
+        <div id="ExtraInfo">
+          <div id="MoreInfo">
+            <div id="Legal">
+              <h4 style="font-weight:600; margin-bottom:2%;">Legal</h4>
+              <p>Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)</p>
+            </div>
+            <div id="Company">
+              <h4 style="font-weight:600; margin-bottom:2%;">Company</h4>
+              <ul style="margin-top:0px;">
+                <li>About</li>
+                <li>Contact Us</li>
+                <li>Blog</li>
+                <li>Testimonials</li>
+                <li>Donate</li>
+              </ul>
+            </div>
+            <div id="Help">
+              <h4 style="font-weight:600; margin-bottom:2%;">Help & Support</h4>
+              <ul style="margin-top:0px;">
+                <li>Help Centre</li>
+                <li>Free</li>
+                <li>Refund</li>
+                <li>Report</li>
+              </ul>
+            </div>
+            <div id="Address">
+              <h4 style="font-weight:600; margin-bottom:2%;">Contact us on: </h4>
+              <table style="width:100%">
+                <tr>
+                  <td style="border: 1px solid grey"><i class="fa fa-phone"></i></td>
+                  <td style="text-align:left; padding-left:2%;">021 685 0991</td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid grey"><i class="fa fa-envelope"></i></td>
+                  <td style="text-align:left; padding-left:2%;"><a href="mailto:info@code4ct.com">info@code4ct.com</a></td>
+                </tr>
+                <tr>
+                  <td  rowspan="1" style="border: 1px solid grey; height: 18px; pad"><i class="fa fa-map-marker"></i></td>
+                  <td rowspan="3" style="text-align:left; padding-left:2%;">Innovate South Africa, <br>403 Old Castle Brewery, <br>6 Beach Rd, Woodstock, <br>Cape Town, 7915</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div id="SocialBar">
+          <p style="float:left; margin-left:2%; margin-top:0.5%; padding-left: 10%;" ><small>copyright &copy; 2017 PRIVACY POLICY</small></p>
+          <ul style="float:right; margin-top:0.5%; margin-right:3%;">
+            <li>Follow Us:<li>
+            <li><a href="https://www.facebook.com/code4ct/" title="fa fa-facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/code4ct?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" title="fa fa-twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/missmegymegs/?hl=en" title="fa fa-pinterest-p" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
+            <li><a href="https://plus.google.com/117615612107853378938" title="fa fa-google-plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/9414552/" title="fa fa-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    </section>
+
+    <div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+    </div>
+
+
+    <script type="text/javascript" src="JS/courses.js"></script>
+    <script type="text/javascript">
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 50 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+	});
+	$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");return false})})
+
+
+	$('#WebDisplay1').hover(function() {
+		$('#WebDisplay1').addClass('transition');
+		}, function() {
+			$('#WebDisplay1').removeClass('transition');
+			});
+
+	$('#WebDisplay2').hover(function() {
+		$('#WebDisplay2').addClass('transition');
+		}, function() {
+			$('#WebDisplay2').removeClass('transition');
+			});
+
+	$('#WebDisplay3').hover(function() {
+		$('#WebDisplay3').addClass('transition');
+		}, function() {
+			$('#WebDisplay3').removeClass('transition');
+			});
+
+	$('#MusicDisplay1').hover(function() {
+		$('#MusicDisplay1').addClass('transition');
+		}, function() {
+			$('#MusicDisplay1').removeClass('transition');
+			});
+
+	$('#MusicDisplay2').hover(function() {
+		$('#MusicDisplay2').addClass('transition');
+		}, function() {
+			$('#MusicDisplay2').removeClass('transition');
+			});
+
+	$('#MoreDisplay1').hover(function() {
+		$('#MoreDisplay1').addClass('transition');
+		}, function() {
+			$('#MoreDisplay1').removeClass('transition');
+			});
+
+	$('#MoreDisplay2').hover(function() {
+		$('#MoreDisplay2').addClass('transition');
+		}, function() {
+			$('#MoreDisplay2').removeClass('transition');
+			});
+
+	$('#MoreDisplay3').hover(function() {
+		$('#MoreDisplay3').addClass('transition');
+		}, function() {
+			$('#MoreDisplay3').removeClass('transition');
+			});
+
+
+	</script>
+
+
+  </body>
+</html>

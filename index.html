@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Code4Ct - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS\Styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:500" rel="stylesheet">
+    <script src="jQuery/jquery-3.2.1.min.js"></script>
+    <script src="JS/partnersSlider.js"></script>
+
+  </head>
+
+  <style>
+
+  h1{
+    text-align: center;
+  }
+
+  #FirstWord{
+    border-bottom: 3px solid #e38f84;
+    padding-bottom: 10px;
+  }
+  h3{
+    border-bottom: 2px solid #ece8e8;
+    padding-bottom: 10px;
+    width: 30%;
+    margin-bottom: 4%;
+  }
+
+  td{
+    text-align: center;
+  }
+
+  th{
+    padding-top: 1.2%;
+    padding-bottom: 1.2%;
+  }
+
+  td p{
+    font-size: 14px;
+    margin: 4%;
+  }
+
+  h4{
+    font-weight: normal;
+    color: grey;
+  }
+
+  #FirstNo{
+    border-top: 2px solid #e38f84;
+    padding-top: 10px;
+  }
+
+  .MainBodyCaption{
+    position: relative;
+  }
+
+  .Mid{
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+
+  .text{
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  
+  .MainSliderButton{
+	  position:absolute;
+	  top: 44%;
+	  opacity:0.5;
+	  background-color:black;
+	  color:white;
+	  font-weight:600;
+	  height:14%;
+	  border:0;
+	  padding:1%;
+  }
+
+
+  </style>
+  <body>
+
+    <section class="thetop">
+
+      <nav>
+        <img src="Images/Logos/Code4CT_logo.jpg" alt="Code 4 CT logo" height="100%" width="20%" style="float:left">
+
+        <div id="NavMenu">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          <input id="Search" type="search" name="Search" placeholder="search..">
+          <button id="SearchButton" style="left:0; background-color:white;"><i class="fa fa-search" style="color:#e38f84;"></i></button>
+        </div>
+
+      </nav>
+
+      <div id="MainBody">
+        <div id="MainSlider">
+          <div class="MainBodyCaption">
+            <button class="MainSliderButton" id="MainSliderBut1" onclick="addDiv(-1)" style="margin-left:1%;"> < </button>
+            <div class="Mid">
+              <div class="text">
+                <h1>Code for Cape Town</h1>
+                <p>We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the   African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is   relevant to a South African context.</p>
+                <a href="about.html"><button class="ReadMore" style="margin-left:38%;">About Us</button></a>
+              </div>
+            </div>
+            <button class="MainSliderButton" id="MainSliderBut2" onclick="addDiv(+1)" style="right:1%;"> > </button>
+
+            <img src="Images/untitled-0932.jpg"  class="MainSlider" alt="TeamCode4CT" height="100%" width="100%">
+            <img src="Images/untitled-0993.jpg"  class="MainSlider" alt="TeamCode4CT" height="100%" width="100%">
+            <img src="Images/IMG_7446.jpg"  class="MainSlider" alt="TeamCode4CT" height="100%" width="100%">
+          </div>
+        </div>
+
+        <div id="WWA">
+          <div id="WhoWeAre">
+            <h3><span id="FirstWord">Who</span> We Are</h3>
+              <p><b>Code for Cape Town strives to see young women empowered to leverage technology for social innovation.</b></p>
+              <p>So that there is greater diversity in the African tech industry.  Code for Cape Town equips high potential female learners with  the coding, problem solving and life skills that will allow them to leverage technology to contribute meaningfully to South   Africa’s innovation system.</p>
+              <a href="about.html"><button class="ReadMore">Read more...</button></a>
+            </div>
+            <div id="WhoWeAreImages">
+              <div id="WhoWeAreImage1">
+                <img src="Images/IMG_2781.jpg" alt="Students Group" height="100%" width="100%" style="position:static;">
+              </div>
+              <div id="WhoWeAreImage2">
+                <img src="Images/IMG_3295.jpg" alt="Studets Speaking" height="100%" width="100%" style="position:static;">
+              </div>
+            <div id="WhoWeAreImage3">
+              <img src="Images/IMG_7424.jpg" alt="Solo Student" height="100%" width="100%" style="position:static;">
+            </div>
+            <div id="WhoWeAreImage4">
+              <img src="Images/IMG_7446.jpg" alt="Assisting Students" height="100%" width="100%" style="position:static;">
+            </div>
+          </div>
+        </div>
+
+        <div id="Services">
+          <table style="position:absolute; margin-top:2%; padding-right:10%; padding-left:10%">
+            <tr style="color:#e38f84;">
+              <td><img src="Images/Icons/monitor.png" alt="WebDevIcon" height="70%" width="20%" style="position:static;"></td>
+              <td style="color:#e38f84;"><img src="Images/Icons/multimedia.png" alt="ComsIcon" height="70%" width="20%" style="position:static;"></td>
+              <td style="color:#e38f84;"><img src="Images/Icons/wrench.png" alt="ProbSolveIcon" height="70%" width="20%" style="position:static;"></td>
+            </tr>
+            <tr style="color:white;">
+              <td><h3 style="border-bottom:none; width:100%; letter-spacing:1.2px; padding:0%; box-sizing:">Web Development</h3></td>
+              <td><h3 style="border-bottom:none; width:100%; letter-spacing:1.2px; padding:0%; box-sizing:">Communication</h3></td>
+              <td><h3 style="border-bottom:none; width:100%; letter-spacing:1.2px; padding:0%; box-sizing:">Problem Solving</h3></td>
+            </tr>
+            <tr style="color:white;">
+              <td><p>Learn how to build your own websites using HTML, CSS, JavaScript & JQuery. Go on to explore exciting modules from game development to user experience design.</p></td>
+              <td><p>Learn how to pitch ideas, represent yourself online, communicate professionally and work with online collaboration tools.</p></td>
+              <td><p>Apply your coding skills to issues you are interested in. You will learn how to tackle complex problems using the design thinking process.</p></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="OAP">
+          <div id="OurAwesomePortFolio">
+            <h3><span id="FirstWord">Our</span> Awesome Portfolio</h3>
+              <p>These photos tell the stories of young female coders who are changing the face of technology. We hope these photos inspire young women to consider tech in new ways.</p>
+            </div>
+            <div id="OurAwesomePortFolioImages">
+              <div id="OurAwesomePortFolioImage1">
+                <img src="Images/IMG_7483.jpg" alt="Students Group" height="100%" width="100%" style="position:static;">
+              </div>
+              <div id="OurAwesomePortFolioImage2">
+                <img src="Images/Ambassador-Zainab-Coding.jpg" alt="Studets Speaking" height="100%" width="100%" style="position:static;">
+              </div>
+            <div id="OurAwesomePortFolioImage3">
+              <img src="Images/IMG_7407.jpg" alt="Solo Student" height="100%" width="100%" style="position:static;">
+            </div>
+            <div id="OurAwesomePortFolioImage4">
+              <img src="Images/IMG_7472.jpg" alt="Assisting Students" height="100%" width="100%" style="position:static;">
+            </div>
+            <div id="OurAwesomePortFolioImage5">
+              <img src="Images/IMG_7401.jpg" alt="Assisting Students" height="100%" width="100%" style="position:static;">
+            </div>
+          </div>
+        </div>
+
+        <div id="MOT">
+          <div id="MeetOurTeam">
+            <h3><span id="FirstWord">Meet</span> Our Team</h3>
+            <p>These photos tell the stories of Tech savy woman who are changing the face of technology. We hope these photos inspire young women to consider tech in new ways.</p>
+          </div>
+          <div id="MeetOurTeamImages">
+            <div id="MeetOurTeamImage1">
+              <img src="Images/Team/Emma.jpg" alt="Andrea" height="100%" width="100%" style="position:static;">
+            </div>
+            <div id="MeetOurTeamBio1">
+              <h3 style="border-bottom:none; width:100%;">Emma Dicks</h3>
+              <h4>Founder and Director</h4>
+              <p>Emma is passionate about providing high quality education that enables young people to bring innovative ideas to life and play an active role in South Africa’s economy.</p>
+            </div>
+            <div id="MeetOurTeamImage2">
+              <img src="Images/Team/Andrea.jpg" alt="Emma" height="100%" width="100%" style="position:static;">
+            </div>
+            <div id="MeetOurTeamBio2">
+              <h3 style="border-bottom:none; width:100%;">Andrea Petersen</h3>
+              <h4>Operations Lead</h4>
+              <p>Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact.</p>
+            </div>
+            <div id="MeetOurTeamImage3">
+              <img src="Images/Team/Tegan.jpg" alt="Tegan" height="100%" width="100%" style="position:static;">
+            </div>
+            <div id="MeetOurTeamBio3">
+              <h3 style="border-bottom:none; width:100%;">Tegan Crous</h3>
+              <h4>Program Lead</h4>
+              <p>Tegan heads up the high school program, she is spurred on by a heart for people and seeing them pursue their potential in a safe, fun and nurturing environment.</p>
+            </div>
+            <div id="MeetOurTeamImage4">
+              <img src="Images/Team/Tracy.jpg" alt="Tracy" height="100%" width="100%" style="position:static;">
+            </div>
+            <div id="MeetOurTeamBio4">
+              <h3 style="border-bottom:none; width:100%;">Tracy-Anne Sikenjana</h3>
+              <h4>Leadership Program Manager</h4>
+              <p>Tracy joined the Code4CT program in 2015, she decided to intern with Code4CT in 2016 to give back to an organisation that had a large impact on her personal growth and development.</p>
+            </div>
+          </div>
+        </div>
+        <div id="CountUp">
+          <table style="position:absolute; margin-top:3.6%; padding-right:10%; padding-left:6.5%; width:100%;">
+            <tr style="width:100%; color:white;">
+              <td style="padding-top:2%; padding-left:2%; padding-right:2%; padding-bottom:1%; font-size:28px; font-weight:bold; letter-spacing:1.6px;" class="counter" data-count="780">0</td>
+              <td style="padding-top:2%; padding-left:2%; padding-right:2%; padding-bottom:1%; font-size:28px; font-weight:bold; letter-spacing:1.6px;" class="counter" data-count="3120">0</td>
+              <td style="padding-top:2%; padding-left:2%; padding-right:2%; padding-bottom:1%; font-size:28px; font-weight:bold; letter-spacing:1.6px;" class="counter" data-count="3000">0</td>
+              <td style="padding-top:2%; padding-left:2%; padding-right:2%; padding-bottom:1%; font-size:28px; font-weight:bold; letter-spacing:1.6px;" class="counter" data-count="8765">0</td>
+            </tr>
+            <tr style="width:100%; color:white;">
+              <td>Number of Girls</td>
+              <td>Finish Projects</td>
+              <td>Cup of Coffee</td>
+              <td>Lines of Code</td>
+            </tr>
+          </table>
+        </div>
+        <div id="Subscribe">
+          <h3 style="width:100%; border-bottom:none; margin-bottom:0;"><i class="fa fa-paper-plane" style="color:#e38f84; padding:1%;"></i>Subcribe To Us</h3>
+          <p>Subcribe to our news leteer to stay up to date with our latest developments.</p>
+          <input type="email" placeholder="Enter your email" style="float:left; margin-left:36%; height:30px; width:20%; background-color:#e1d4d4; border-radius:8%;">
+          <button id="Submit" style="left:0; background-color:#e38f84; color:white; float:left; margin-top:0;height:36px; width:8%; border-radius:10%;">Submit</button>
+        </div>
+
+      </div>
+
+      <footer>
+        <div id="PartnerSlider">
+          <ul id="slides">
+            <li class="slide showing"><img src="Images/Logos/45_case_study_logos_11_csg.jpg" alt="" height="100%" width="100%"></li>
+            <li class="slide"><img src="Images/Logos/deloitte-logo.png" alt="" height="100%" width="100%"></li>
+            <li class="slide"><img src="Images/Logos/lwandlelogo.png" alt="" height="100%" width="100%"></li>
+            <li class="slide"><img src="Images/Logos/mazars-logo.png" alt="" height="100%" width="100%"></li>
+            <li class="slide"><img src="Images/Logos/Mobenzi_logo.png" alt="" height="100%" width="100%"></li>
+            <li class="slide"><img src="Images/Logos/openboxlogo.png" alt="" height="100%" width="100%"></li>
+            <li class="slide"><img src="Images/Logos/Takealot-logo.png" alt="" height="100%" width="100%"></li>
+            <li class="slide"><img src="Images/Logos/TNS-logo.png" alt="" height="100%" width="100%"></li>
+          </ul>
+          <div id="Blocker1"></div>
+          <div id="Blocker2"></div>
+        </div>
+        <div id="ExtraInfo">
+          <div id="MoreInfo">
+            <div id="Legal">
+              <h4 style="font-weight:600; margin-bottom:2%;">Legal</h4>
+              <p>Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)</p>
+            </div>
+            <div id="Company">
+              <h4 style="font-weight:600; margin-bottom:2%;">Company</h4>
+              <ul style="margin-top:0px;">
+                <li>About</li>
+                <li>Contact Us</li>
+                <li>Blog</li>
+                <li>Testimonials</li>
+                <li>Donate</li>
+              </ul>
+            </div>
+            <div id="Help">
+              <h4 style="font-weight:600; margin-bottom:2%;">Help & Support</h4>
+              <ul style="margin-top:0px;">
+                <li>Help Centre</li>
+                <li>Free</li>
+                <li>Refund</li>
+                <li>Report</li>
+              </ul>
+            </div>
+            <div id="Address">
+              <h4 style="font-weight:600; margin-bottom:2%;">Contact us on: </h4>
+              <table style="width:100%">
+                <tr>
+                  <td style="border: 1px solid grey"><i class="fa fa-phone"></i></td>
+                  <td style="text-align:left; padding-left:2%;">021 685 0991</td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid grey"><i class="fa fa-envelope"></i></td>
+                  <td style="text-align:left; padding-left:2%;"><a href="mailto:info@code4ct.com">info@code4ct.com</a></td>
+                </tr>
+                <tr>
+                  <td  rowspan="1" style="border: 1px solid grey; height: 18px; pad"><i class="fa fa-map-marker"></i></td>
+                  <td rowspan="3" style="text-align:left; padding-left:2%;">Innovate South Africa, <br>403 Old Castle Brewery, <br>6 Beach Rd, Woodstock, <br>Cape Town, 7915</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div id="SocialBar">
+          <p style="float:left; margin-left:2%; margin-top:0.5%; padding-left: 10%;" ><small>copyright &copy; 2017 PRIVACY POLICY</small></p>
+          <ul style="float:right; margin-top:0.5%; margin-right:3%;">
+            <li>Follow Us:<li>
+            <li><a href="https://www.facebook.com/code4ct/" title="fa fa-facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/code4ct?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" title="fa fa-twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/missmegymegs/?hl=en" title="fa fa-pinterest-p" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
+            <li><a href="https://plus.google.com/117615612107853378938" title="fa fa-google-plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/9414552/" title="fa fa-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+
+
+    </section>
+
+
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+
+    <script type="text/javascript">
+
+    let slideIndex=1;
+    showDivs(slideIndex);
+
+    function addDiv(n){
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n){
+
+      var i;
+      var x = document.getElementsByClassName('MainSlider');
+
+      if (n > x.length) {slideIndex=1}
+      if (n < 1) {slideIndex = x.length}
+
+      for (i = 0; i < x.length; i++){
+        x[i].style.display = "none";
+      }
+
+      x[slideIndex - 1].style.display = "block";
+    }
+
+    let slides = document.querySelectorAll('#slides .slide');
+    let currentSlide = 0;
+    var slideInterval = setInterval(nextSlide,4000);
+
+    function nextSlide() {
+      slides[currentSlide].className = 'slide';
+      currentSlide = (currentSlide+1)%slides.length;
+      slides[currentSlide].className = 'slide showing';
+    }
+
+    $(document).ready(function() {
+      var auto_slide = 1;
+      var hover_pause = 2;
+      var key_slide = 1;
+      var auto_slide_seconds = 7000;
+      $('#slides li:first').before($('#slides li:last'));
+      if(auto_slide == 1){
+        var timer = setInterval('slide("right")', auto_slide_seconds);
+        $('#hidden_auto_slide_seconds').val(auto_slide_seconds);
+      }
+      if(hover_pause == 2){
+        $('#slides').hover(function(){
+          clearInterval(timer)
+        },function(){
+          timer = setInterval('slide("right")', auto_slide_seconds);
+        });
+      }
+      if(key_slide == 1){
+        $(document).bind('keypress', function(e) {
+          if(e.keyCode==37){
+            slide('left');
+          }else if(e.keyCode==39){
+            slide('right');
+          }
+        });
+      }
+    });
+
+    function slide(where){
+      var item_width = $('#slides li').outerWidth();
+      if(where == 'left'){
+        var left_indent = parseInt($('#slides').css('left')) + item_width;
+      }else{
+        var left_indent = parseInt($('#slides').css('left')) - item_width;
+      }
+      $('#slides:not(:animated)').animate({'left' :
+      left_indent},7000,function(){
+        if(where == 'left'){
+          $('#slides li:first').before($('#slides li:last'));
+        }else{
+          $('#slides li:last').after($('#slides li:first'));
+        }
+        $('#slides').css({'left' : '0px'});
+      });
+    }
+
+
+
+    $('.counter').each(function(){
+      var $this = $(this),
+      countTo = $this.attr('data-count');
+
+      $({countNum:$this.text()}).animate({
+        countNum: countTo
+      },
+      {
+        duration: 5000,
+        easing: 'linear',
+        step: function() {
+          $this.text(Math.floor(this.countNum));
+        },
+        complete: function(){
+          $this.text(this.countNum + "+");
+      }
+    });
+  });
+
+  	  $('#SearchButton').hover(function() {
+        $('#SearchButton').addClass('transition');
+		}, function() {
+			$('#SearchButton').removeClass('transition');
+		});
+
+	  $('.ReadMore').hover(function() {
+        $('.ReadMore').addClass('transition');
+		}, function() {
+			$('.ReadMore').removeClass('transition');
+		});
+
+	  $('#Submit').hover(function() {
+        $('#Submit').addClass('transition');
+		}, function() {
+			$('#Submit').removeClass('transition');
+		});
+
+	  $('#MainSliderBut1').hover(function() {
+        $('#MainSliderBut1').addClass('transition');
+		}, function() {
+			$('#MainSliderBut1').removeClass('transition');
+		});
+
+	  $('#MainSliderBut2').hover(function() {
+        $('#MainSliderBut2').addClass('transition');
+		}, function() {
+			$('#MainSliderBut2').removeClass('transition');
+		});
+
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 50 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
+$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");return false})})
+    </script>
+
+  </body>
+</html>
