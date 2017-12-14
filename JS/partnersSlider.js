@@ -63,7 +63,7 @@ $(document).ready(function() {
 function slide(where){
 
            //get the item width
-           var item_width = $('#slides li').outerWidth() + 10;
+           var item_width = $('#slides li').outerWidth();
 
            /* using a if statement and the where variable check
            we will check where the user wants to slide (left or right)*/
