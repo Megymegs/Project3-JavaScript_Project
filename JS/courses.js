@@ -63,7 +63,7 @@ $(function(){
 
 $(function(){
   $("#WebDisplay2").click(function(){
-    $("#create").append(
+    $("#create").html(
       getCourseInfo(music)
     )
   })
@@ -71,7 +71,7 @@ $(function(){
 
 $(function(){
   $("#WebDisplay3").click(function(){
-    $("#createWeb").append(
+    $("#createWeb").html(
       getCourseInfo(twoD)
     )
   })
@@ -79,7 +79,7 @@ $(function(){
 
 $(function(){
   $("#MusicDisplay1").click(function(){
-    $("#intoMusic").append(
+    $("#intoMusic").html(
       getCourseInfo(media)
     )
   })
@@ -87,7 +87,7 @@ $(function(){
 
 $(function(){
   $("#MusicDisplay2").click(function(){
-    $("#createMusic").append(
+    $("#createMusic").html(
       getCourseInfo(musicRas)
     )
   })
@@ -95,7 +95,7 @@ $(function(){
 
 $(function(){
   $("#MoreDisplay1").click(function(){
-    $("#anime").append(
+    $("#anime").html(
       getCourseInfo(animation)
     )
   })
@@ -119,7 +119,7 @@ $(function(){
 
 $(function(){
   $("#beginnerDisplay2").click(function(){
-    $("#front-end").append(
+    $("#front-end").html(
       getCourseInfo(frontDev)
     )
   })
@@ -127,7 +127,7 @@ $(function(){
 
 $(function(){
   $("#beginnerDisplay3").click(function(){
-    $("#python").append(
+    $("#python").html(
       getCourseInfo(python)
     )
   })
@@ -135,7 +135,7 @@ $(function(){
 
 $(function(){
   $("#intermediateDisplay1").click(function(){
-    $("#FulSt").append(
+    $("#FulSt").html(
       getCourseInfo(fullStack)
     )
   })
@@ -143,7 +143,7 @@ $(function(){
 
 $(function(){
   $("#intermediateDisplay2").click(function(){
-    $("#Web-Dep").append(
+    $("#Web-Dep").html(
       getCourseInfo(webDep)
     )
   })
@@ -151,7 +151,7 @@ $(function(){
 
 $(function(){
   $("#socialDisplay1").click(function(){
-    $("#Inno").append(
+    $("#Inno").html(
       getCourseInfo(inno)
     )
   })
@@ -159,7 +159,7 @@ $(function(){
 
 $(function(){
   $("#socialDisplay2").click(function(){
-    $("#Storm").append(
+    $("#Storm").html(
       getCourseInfo(storm)
     )
   })
@@ -167,7 +167,7 @@ $(function(){
 
 $(function(){
   $("#socialDisplay3").click(function(){
-    $("#Hack").append(
+    $("#Hack").html(
       getCourseInfo(Hackathon)
     )
   })
@@ -175,7 +175,7 @@ $(function(){
 
 $(function(){
   $("#socialDisplay4").click(function(){
-    $("#Ind").append(
+    $("#Ind").html(
       getCourseInfo(immerse)
     )
   })
@@ -183,7 +183,7 @@ $(function(){
 
 $(function(){
   $("#careerDisplay1").click(function(){
-    $("#Convo").append(
+    $("#Convo").html(
       getCourseInfo(convo)
     )
   })
@@ -191,7 +191,7 @@ $(function(){
 
 $(function(){
   $("#careerDisplay2").click(function(){
-    $("#Presentation").append(
+    $("#Presentation").html(
       getCourseInfo(present)
     )
   })
@@ -199,7 +199,7 @@ $(function(){
 
 $(function(){
   $("#careerDisplay3").click(function(){
-    $("#CV").append(
+    $("#CV").html(
       getCourseInfo(linked)
     )
   })
@@ -207,7 +207,7 @@ $(function(){
 
 $(function(){
   $("#careerDisplay4").click(function(){
-    $("#Net").append(
+    $("#Net").html(
       getCourseInfo(network)
     )
   })
@@ -215,7 +215,7 @@ $(function(){
 
 $(function(){
   $("#careerDisplay5").click(function(){
-    $("#Digi").append(
+    $("#Digi").html(
       getCourseInfo(digiCom)
     )
   })
@@ -223,7 +223,7 @@ $(function(){
 
 $(function(){
   $("#careerDisplay6").click(function(){
-    $("#Apply").append(
+    $("#Apply").html(
       getCourseInfo(study)
     )
   })
