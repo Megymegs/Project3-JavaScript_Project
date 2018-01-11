@@ -4,7 +4,7 @@ var Course = function(title, description, duration, cost){
     this.duration = duration,
     this.cost = cost,
     getCourseInfo = function(){
-          return 'Title: &nbsp;' + this.title + '<br>Description: &nbsp;' + this.description + '<br>Duration: &nbsp;' + this.duration + '<br>Cost: &nbsp;' + this.cost;
+          return 'Title: &nbsp;' + title + '<br>Description: &nbsp;' + description + '<br>Duration: &nbsp;' + duration + '<br>Cost: &nbsp;' + cost;
       }
     };
 
